@@ -23,3 +23,8 @@ class UserInput(BaseModel):
     def username_validate(cls, value : str) -> str:
         if len(value) < 5 or len(value) >= 50:
             raise ValueError('Username validation error')
+        
+class UserOutput(BaseModel):
+    id: int
+    username: str
+    email: EmailStr
