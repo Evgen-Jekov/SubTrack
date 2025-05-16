@@ -1,4 +1,5 @@
 FastAPI[all]
 uvicorn
 SQLAlchemy
+alembic
 psycopg2-binary
